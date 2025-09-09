@@ -4,7 +4,7 @@ import model.Automovel;
 import model.Carro;
 import model.Pessoa;
 
-public class Main {
+public class MainController {
     public static void main(String[] args) {
         System.out.println("Hello World " + 5);
 
