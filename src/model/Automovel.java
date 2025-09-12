@@ -1,13 +1,12 @@
 package model;
 
 public class Automovel {
+    //Atributos
     private String marca;
     private String modelo;
     private int anoFabricacao;
 
     //Métodos Construtores
-
-
     public Automovel() {
     }
 
@@ -17,7 +16,7 @@ public class Automovel {
         this.anoFabricacao = anoFabricacao;
     }
 
-    //Getters e Setters
+    //Métodos Getters e Setters
     public String getMarca() {
         return marca;
     }
@@ -26,22 +25,7 @@ public class Automovel {
         this.marca = marca;
     }
 
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public int getAnoFabricacao() {
-        return anoFabricacao;
-    }
-
-    public void setAnoFabricacao(int anoFabricacao) {
-        this.anoFabricacao = anoFabricacao;
-    }
-
+    //Método conversor de Object para String (este método está escrito na classe Object)
     @Override
     public String toString() {
         return "Automovel{" +
