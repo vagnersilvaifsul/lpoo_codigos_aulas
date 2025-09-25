@@ -3,6 +3,8 @@ package controller;
 import model.Funcionario;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class FuncionarioController {
@@ -56,17 +58,20 @@ public class FuncionarioController {
         System.out.println(funcionarioList);
 
         //Pesquisar
-        //Pesquisa por força bruta utilizando for-i
+        //Pesquisa por força bruta utilizando for-i (não vamos utilizar)
+        System.out.println("Pesquisa por força bruta utilizando for-i");
         for (int i = 0; i < funcionarioList.size(); i++) {
             if(funcionarioList.get(i).getNome().equals("Rafael")){
                 System.out.println(funcionarioList.get(i).getNome());
             }
         }
-        //Pesquisa por força bruta utilizando for-each
+        //Pesquisa por força bruta utilizando forEach (não vamos utilizar)
+        System.out.println("Pesquisa por força bruta utilizando forEach");
         for(Funcionario f : funcionarioList){
             if(f.getNome().equals("Rafael")){
                 System.out.println(f.getNome());
             }
         }
+
     }
 }
