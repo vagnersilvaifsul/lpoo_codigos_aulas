@@ -46,7 +46,7 @@ public class FuncionarioController {
         //Coleções
         //declara a coleção
         List<Funcionario> funcionarioList = new ArrayList<>();
-        //popular
+        //popula
         funcionarioList.add(f1);
         funcionarioList.add(f2);
         funcionarioList.add(f3);
@@ -54,10 +54,10 @@ public class FuncionarioController {
         funcionarioList.add(f5);
         funcionarioList.add(f6);
 
-        //imprimir
+        //imprimi
         System.out.println(funcionarioList);
 
-        //Pesquisar
+        //Pesquisa
         //Pesquisa por força bruta utilizando for-i (não vamos utilizar)
         System.out.println("Pesquisa por força bruta utilizando for-i");
         for (int i = 0; i < funcionarioList.size(); i++) {
