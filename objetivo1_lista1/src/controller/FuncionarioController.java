@@ -2,11 +2,6 @@ package controller;
 
 import model.Funcionario;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 public class FuncionarioController {
     public static void main(String[] args) {
         //i. Crie duas instâncias de cada classe utilizando um construtor padrão;
@@ -42,36 +37,5 @@ public class FuncionarioController {
         //toString(), utilize os métodos getters.
         System.out.println(f1.getNome() + " " + f1.getSalario());
         System.out.println(f2.getNome() + " " + f2.getSalario());
-
-        //Coleções
-        //declara a coleção
-        List<Funcionario> funcionarioList = new ArrayList<>();
-        //popula
-        funcionarioList.add(f1);
-        funcionarioList.add(f2);
-        funcionarioList.add(f3);
-        funcionarioList.add(f4);
-        funcionarioList.add(f5);
-        funcionarioList.add(f6);
-
-        //imprimi
-        System.out.println(funcionarioList);
-
-        //Pesquisa
-        //Pesquisa por força bruta utilizando for-i (não vamos utilizar)
-        System.out.println("Pesquisa por força bruta utilizando for-i");
-        for (int i = 0; i < funcionarioList.size(); i++) {
-            if(funcionarioList.get(i).getNome().equals("Rafael")){
-                System.out.println(funcionarioList.get(i).getNome());
-            }
-        }
-        //Pesquisa por força bruta utilizando forEach (não vamos utilizar)
-        System.out.println("Pesquisa por força bruta utilizando forEach");
-        for(Funcionario f : funcionarioList){
-            if(f.getNome().equals("Rafael")){
-                System.out.println(f.getNome());
-            }
-        }
-
     }
 }
