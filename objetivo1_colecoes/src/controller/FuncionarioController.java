@@ -2,8 +2,7 @@ package controller;
 
 import model.Funcionario;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class FuncionarioController {
     public static void main(String[] args) {
@@ -66,7 +65,6 @@ public class FuncionarioController {
         funcionarioList.add(f6);
         funcionarioList.add(f6);
         funcionarioList.add(f6);
-        funcionarioList.add(f6);
 
         //Como imprimir?
         System.out.println(funcionarioList);
@@ -90,23 +88,45 @@ public class FuncionarioController {
         //Pesquisa Binária (Vamos dar preferencia por esta técnica) e Ordenação
         //1o. A coleção deve ser ordenada pelo atributo que corresponde à chave de pesquisa (se não ordenar não funciona)
         System.out.println("1o. A coleção deve ser ordenada pelo atributo que corresponde à chave de pesquisa");
+        funcionarioList
+                .sort(Comparator.comparing(Funcionario::getNome));
+        System.out.println(funcionarioList);
 
         //2o. Aplica a pesquisa binária (Veja que devolve um índice para a posição do elemento na coleção)
         System.out.println("Aplica a pesquisa binária (Veja que devolve um índice para a posição do elemento na coleção)");
+        int indice = Collections.binarySearch(
+                funcionarioList, //a lista que será pesquisada
+                new Funcionario("Maria"), //Objeto a ser pequisado
+                Comparator.comparing(Funcionario::getNome)); //Comparador
 
         //3o. Exibe o resultado da pesquisa binária
         System.out.println("Resultado da Pesquisa Binária (Vamos dar preferencia por esta técnica)");
-
+        System.out.println(funcionarioList.get(indice));
 
         //-------- Coleções do tipo Map
 
         //Como declarar
+        //List<Funcionario> funcionarioList = new ArrayList<>();
+        Map<String, Funcionario> funcionarioMap = new HashMap<>();
 
         //Como popular
+        funcionarioMap.put(f1.getNome(), f1);
+        funcionarioMap.put(f2.getNome(), f2);
+        funcionarioMap.put(f3.getNome(), f3);
+        funcionarioMap.put(f4.getNome(), f4);
+        funcionarioMap.put(f5.getNome(), f5);
+        //Este tipo de coleção não permite duplicatas. Note que apenas um deles é inserido na coleção
+        funcionarioMap.put(f6.getNome(), f6);
+        funcionarioMap.put(f6.getNome(), f6);
+        funcionarioMap.put(f6.getNome(), f6);
 
         //Como imprimir
+        System.out.println("Imprimindo Map");
+        System.out.println(funcionarioMap);
 
         //Como Pesquisar
+        System.out.println("Pesquisando Map");
+        System.out.println(funcionarioMap.get(f5.getNome()));
 
         //Como ordenar (este tipo de coleção não permite ordenação, "quebraria" o uso da Função Hash
 

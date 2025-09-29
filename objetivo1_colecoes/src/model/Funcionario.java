@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Funcionario {
     //atributos
     private String nome;
@@ -42,5 +44,17 @@ public class Funcionario {
                 "nome='" + nome + '\'' +
                 ", salario=" + salario +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Funcionario that = (Funcionario) o;
+        return Double.compare(salario, that.salario) == 0 && Objects.equals(nome, that.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, salario);
     }
 }
