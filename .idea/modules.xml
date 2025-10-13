@@ -5,7 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/lpoo_codigos_aulas.iml" filepath="$PROJECT_DIR$/lpoo_codigos_aulas.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo1_colecoes/objetivo1_colecoes.iml" filepath="$PROJECT_DIR$/objetivo1_colecoes/objetivo1_colecoes.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo1_lista1/objetivo1_lista1.iml" filepath="$PROJECT_DIR$/objetivo1_lista1/objetivo1_lista1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objetivo2_heranca_de_classes/objetivo2_heranca_de_classes.iml" filepath="$PROJECT_DIR$/objetivo2_heranca_de_classes/objetivo2_heranca_de_classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objetivo2_heranca_de_interfaces/objetivo2_heranca_de_interfaces.iml" filepath="$PROJECT_DIR$/objetivo2_heranca_de_interfaces/objetivo2_heranca_de_interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objetivo2_heranca_simples_lista1/objetivo2_heranca_simples_lista1.iml" filepath="$PROJECT_DIR$/objetivo2_heranca_simples_lista1/objetivo2_heranca_simples_lista1.iml" />
       <module fileurl="file://$PROJECT_DIR$/semana1e2/semana1e2.iml" filepath="$PROJECT_DIR$/semana1e2/semana1e2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semana4_membro_static/semana4_membro_static.iml" filepath="$PROJECT_DIR$/semana4_membro_static/semana4_membro_static.iml" />
     </modules>
   </component>
 </project>
