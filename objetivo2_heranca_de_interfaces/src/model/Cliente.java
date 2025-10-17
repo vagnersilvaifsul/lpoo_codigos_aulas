@@ -41,7 +41,7 @@ public class Cliente implements Investidor{
     }
 
     @Override
-    public String getTicker() {
+    public String       getTicker() {
         return ticker;
     }
 
